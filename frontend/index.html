@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: white;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+            display: flex;
+            align-items: center;
+        }
+        header .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        .btn-appointment {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+        .btn-appointment:hover {
+            background-color: #0056b3;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 10%;
+            background-color: #e9f1ff;
+        }
+        .hero .hero-text {
+            max-width: 50%;
+        }
+        .hero h2 {
+            font-size: 18px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .hero h1 span {
+            color: #007bff;
+        }
+        .hero p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .hero img {
+            max-width: 40%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://via.placeholder.com/40" alt="Logo">
+            Medical.
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="admin.html">Admin</a>
+            <a href="doctor-login.html">Doctor</a>
+            <a href="user-login.html">User</a>
+            <a href="#" class="btn-appointment">Appointment</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>COMMITTED TO SUCCESS</h2>
+            <h1>WE CARE ABOUT YOUR <span>HEALTH</span></h1>
+            <p>"ADD RANDOM STUFF HERE" Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat is aute irure.</p>
+            <a href="#" class="btn-primary">Appointment</a>
+        </div>
+        <img src="https://via.placeholder.com/600x400" alt="Doctor Image">
+    </section>
+</body>
+</html>

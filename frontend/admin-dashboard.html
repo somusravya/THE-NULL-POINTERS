@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Medical Hospital</title>
+    <link rel="stylesheet" href="dashboard-styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Admin Dashboard</h1>
+            <button id="logout">Logout</button>
+        </header>
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn">Manage Options</button>
+                <div class="dropdown-content">
+                    <a href="#accounts">Manage Accounts</a>
+                    <a href="#appointments">Manage Appointments</a>
+                    <a href="#reports">Generate Reports</a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section id="accounts">
+                <h2>Manage Doctor Accounts</h2>
+                <form id="register-doctor-form">
+                    <input type="text" id="doctor-name" placeholder="Doctor's Name" required>
+                    <input type="text" id="doctor-specialty" placeholder="Specialty" required>
+                    <button type="submit">Register Doctor</button>
+                </form>
+                <h3>Registered Doctors:</h3>
+                <ul id="doctor-list">
+                    <!-- Pre-created accounts -->
+                    <li>Dr. John Smith - Cardiologist</li>
+                    <li>Dr. Emily Watson - Neurologist</li>
+                </ul>
+            </section>
+
+            <section id="appointments">
+                <h2>Manage Appointments</h2>
+                <form id="appointment-form">
+                    <select id="select-doctor">
+                        <option value="">Select Doctor</option>
+                        <option value="Dr. John Smith">Dr. John Smith</option>
+                        <option value="Dr. Emily Watson">Dr. Emily Watson</option>
+                    </select>
+                    <input type="text" id="appointment-date" placeholder="Appointment Date (YYYY-MM-DD)" required>
+                    <button type="submit">Add Appointment</button>
+                </form>
+                <h3>Doctor's Appointments:</h3>
+                <ul id="appointment-list">
+                    <!-- Pre-existing appointments -->
+                    <li>Dr. John Smith - 2024-08-20</li>
+                    <li>Dr. Emily Watson - 2024-08-22</li>
+                </ul>
+            </section>
+
+            <section id="reports">
+                <h2>Generate Reports</h2>
+                <button id="generate-report">Generate Doctor Report</button>
+                <button id="generate-patient-report">Generate Appointment Report</button>
+                <div id="report-content">
+                    <!-- Report content will be injected here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="dashboard-script.js"></script>
+</body>
+</html>
