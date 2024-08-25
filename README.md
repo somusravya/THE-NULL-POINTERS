@@ -41,3 +41,52 @@ The Hospital Management System (HMS) is a comprehensive software solution design
 - **Testing:** JUnit 5
 - **Frontend:** HTML, CSS, JavaScript
 
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your machine:
+
+- **Java Development Kit (JDK)** 1.8 or higher
+- **Apache Maven** (for build automation)
+- **MySQL** (for the database)
+- **Apache Tomcat** or another Java web server (optional, if deploying as a web application)
+- **Git** (optional, for version control)
+- **A modern web browser** (for accessing the frontend)
+
+## Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/hospital-management-system.git
+cd hospital-management-system
+```
+
+### Database Setup
+
+1. **Start MySQL Server**: Ensure your MySQL server is running.
+
+2. **Create Database**:
+   
+   Log in to the MySQL command line interface or use a GUI like phpMyAdmin, and create a new database:
+   
+   ```sql
+   CREATE DATABASE hospital_management;
+   ```
+3. Import Database Schema:
+
+Import the provided SQL file to set up the required tables and schema.
+
+```bash
+mysql -u root -p hospital_management < database/schema.sql
+```
+4. Update Database Configuration:
+
+Update the database configuration in your Java backend project. Locate the db.properties file and ensure the following properties are set:
+
+```bash
+db.url=jdbc:mysql://localhost:3306/hospital_management
+db.username=root
+db.password=your_password
+```
+5. Run the project
+
