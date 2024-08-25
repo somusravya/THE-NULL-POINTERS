@@ -34,7 +34,6 @@ The Hospital Management System (HMS) is a comprehensive software solution design
 ### Receptionist (User) Features
 - **Patient Registration:** Register new patients and maintain patient records.
 - **Appointment Booking:** Schedule appointments for patients with doctors, ensuring adherence to doctor availability.
-- **Appointment Management:** View and manage appointments, including cancellations and rescheduling.
 
 ## Technology Stack
 - **Backend:** Java
