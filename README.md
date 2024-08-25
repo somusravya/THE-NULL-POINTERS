@@ -37,7 +37,7 @@ The Hospital Management System (HMS) is a comprehensive software solution design
 - **Appointment Management:** View and manage appointments, including cancellations and rescheduling.
 
 ## Technology Stack
-- **Backend:** Java, Spring Boot
+- **Backend:** Java
 - **Database:** MySQL, JDBC
 - **Testing:** JUnit 5
 
