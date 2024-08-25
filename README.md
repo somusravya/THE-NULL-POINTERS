@@ -38,6 +38,6 @@ The Hospital Management System (HMS) is a comprehensive software solution design
 
 ## Technology Stack
 - **Backend:** Java, Spring Boot
-- **Database:** [Specify your database, e.g., MySQL, PostgreSQL]
+- **Database:** MySQL, JDBC
 - **Testing:** JUnit 5
 
